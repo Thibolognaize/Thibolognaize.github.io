@@ -64,6 +64,16 @@ a {
     line-height: 1.5;
 }
 
+.headings3 {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-family: Tourney-bold;
+    font-size: 20px;
+    text-shadow: 0 0 15px rgb(30, 144, 255);
+    line-height: 1.5;
+}
+
 .neon_pink {
     text-shadow: 0 0 15px rgb(255, 0, 153);
 }
@@ -121,6 +131,14 @@ i {
         top: 0;
     }
 
+
+    .logo-container {
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .logo {
         filter: invert(1);
     }
@@ -130,14 +148,6 @@ i {
         height: 70%;
         object-fit: scale-down;
     }
-
-    .logo-container {
-        width: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
 
     nav {
         display: flex;
@@ -190,6 +200,26 @@ i {
         width: auto;
     }
 
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .img-container a {
+        font-family: Anta;
+        color: #1E90FF;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .img-container a:hover {
+        color: #ff0099;
+        text-decoration: underline;
+        text-shadow: 0 0 15px rgb(255, 0, 153);
+    }
+
     .info-container img {
         border: 2px rgba(255, 255, 255, 0.71) solid;
         border-radius: 50%;
@@ -224,6 +254,33 @@ i {
 
     #about p {
         margin-top: 10px;
+    }
+
+    .grid-3 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logo-holder {
+        margin: auto;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        background-color: #1E90FF;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .logo-holder:hover {
+        background-color: #00FF85;
+    }
+
+
+    .logo-holder img {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
