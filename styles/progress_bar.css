@@ -1,0 +1,60 @@
+.placement {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    background-color: black;
+}
+
+.progress-bar {
+    --progress-color: #00ff84;
+    --progress-size: 40px;
+    text-shadow: 0 0 100px rgb(255, 0, 153);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: var(--progress-size);
+    background: var(--progress-color);
+    transform-origin: left;
+}
+
+@supports (animation-timeline: scroll()) {
+    .progress-bar {
+        animation: scale linear auto both;
+        animation-timeline: scroll(root);
+        animation-range: 0 100%;
+        transform: none;
+    }
+}
+
+@supports not (animation-timeline: scroll()) {
+    .progress-bar {
+        transform: scaleX(0);
+        will-change: transform;
+        transition: transform 0.1s linear;
+    }
+}
+
+@keyframes scale {
+    from {
+        scale: 0 1;
+    }
+
+    to {
+        scale: 1 1;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    margin-inline: auto;
+}

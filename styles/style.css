@@ -1,0 +1,339 @@
+/* Normal Weight */
+@font-face {
+    font-family: Tourney-bold;
+    src: url("../assets/fonts/Tourney/static/Tourney-Light.ttf");
+}
+
+/* Thin Weight */
+@font-face {
+    font-family: Tourney-thin;
+    src: url('../assets/fonts/Tourney/static/Tourney-Thin.ttf');
+}
+
+/* Nav font */
+@font-face {
+    font-family: Anta;
+    src: url('../assets/fonts/Anta-Regular.ttf');
+}
+
+@font-face {
+    font-family: Sixtyfour;
+    src: url('../assets/fonts/Sixtyfour-Regular.ttf');
+}
+
+/* p font */
+@font-face {
+    font-family: Alloy;
+    src: url('../assets/fonts/Alloy-Regular.ttf');
+}
+
+
+body {
+    color: white;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.bg-black {
+    background-color: #0D0D0D;
+}
+
+.headings1 {
+    color: white;
+    font-family: Tourney-bold;
+    font-size: 60px;
+    text-shadow: 0 0 15px rgb(255, 0, 153);
+}
+
+.headings2 {
+    color: white;
+    font-family: Tourney-thin;
+    font-size: 50px;
+    text-shadow: 0 0 15px rgb(30, 144, 255);
+    line-height: 1.5;
+}
+
+.neon_pink {
+    text-shadow: 0 0 15px rgb(255, 0, 153);
+}
+
+.neon_blue {
+    text-shadow: 0 0 15px rgb(30, 144, 255);
+}
+
+.neon_green {
+    text-shadow: 0 0 15px rgb(0, 255, 133);
+}
+
+.accent1 {
+    color: #00FF85;
+}
+
+.accent2 {
+    color: #1E90FF;
+}
+
+.hover {
+    color: #ff0099;
+}
+
+i {
+    text-shadow: 0 0 15px rgb(0, 255, 133) !important;
+    font-size: 50px !important;
+    cursor: pointer !important;
+    margin-top: 4rem !important;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .intro {
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        height: 90px;
+        background-color: rgba(0, 0, 0, 0.71);
+        margin-bottom: 1rem;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        filter: invert(1);
+    }
+
+    .logo-container img {
+        width: auto;
+        height: 70%;
+        object-fit: scale-down;
+    }
+
+    .logo-container {
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    nav {
+        display: flex;
+        align-items: center;
+        width: 70vw;
+    }
+
+    li {
+        list-style-type: none;
+        font-family: Anta;
+        font-size: 15px;
+        text-shadow: 0 0 15px rgb(255, 0, 153);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        font-size: large;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .section-title {
+        font-family: Anta;
+        font-size: 2rem;
+        text-shadow: 0 0 15px rgb(30, 144, 255);
+        text-decoration: underline;
+        margin-left: 1rem;
+    }
+
+    section {
+        border-radius: 15px;
+        border: 2px rgba(255, 0, 153, 0.663) dashed;
+        background-color: rgba(128, 128, 128, 0.24);
+        margin: 10px;
+        padding: 10px;
+    }
+
+    section p {
+        text-align: justify;
+        font-family: Anta;
+        font-size: 15px;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: flex-start;
+        justify-content: space-between;
+        height: 160px;
+        width: auto;
+    }
+
+    .info-container img {
+        border: 2px rgba(255, 255, 255, 0.71) solid;
+        border-radius: 50%;
+        width: auto;
+        height: 80%;
+        object-fit: scale-down;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    .info h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 28px;
+        font-family: Alloy;
+    }
+
+    .info h3 {
+        margin: 0;
+        margin-left: 10px;
+        text-align: left;
+        font-size: 13px;
+        font-family: Alloy;
+    }
+
+    #about p {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width: 768px) {
+    .blue-box {
+        width: 50%;
+        height: 10vh;
+        background-color: rgb(0, 157, 255);
+        margin-bottom: 1rem;
+        position: sticky;
+        top: 0;
+    }
+
+    .green-box {
+        width: 100%;
+        height: 20vh;
+        background: rgb(100, 229, 86);
+        margin-bottom: 1rem;
+    }
+
+    .section2 {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        gap: 10px;
+    }
+
+    /* .mid-row {
+        display: flex;
+        flex-direction: row;
+    } */
+
+    .section2 .yellow-box {
+        width: 48%;
+        height: 25vh;
+        background: rgb(251, 255, 4);
+        margin-bottom: 1rem;
+    }
+
+    .section2 .purple-box {
+        width: 48%;
+        height: 25vh;
+        background: rgb(146, 4, 255);
+    }
+
+    .red-box {
+        width: 100%;
+        height: 10vh;
+        background: red;
+        position: sticky;
+        margin-top: 1rem;
+        bottom: 0;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .blue-box {
+        width: 33%;
+        height: 10vh;
+        background-color: rgb(0, 157, 255);
+        margin-bottom: 1rem;
+        position: sticky;
+        top: 0;
+    }
+
+    .green-box {
+        width: 100%;
+        height: 20vh;
+        background: rgb(100, 229, 86);
+        margin-bottom: 1rem;
+    }
+
+    .section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .section2 .yellow-box {
+        width: 32%;
+        height: 25vh;
+        background: rgb(251, 255, 4);
+        margin-bottom: 1rem;
+    }
+
+    .section2 .purple-box {
+        width: 32%;
+        height: 25vh;
+        background: rgb(146, 4, 255);
+        margin-bottom: 1rem;
+    }
+
+    .section2 .pink-box {
+        width: 32%;
+        height: 25vh;
+        background: rgb(230, 4, 255);
+    }
+
+    .red-box {
+        width: 100%;
+        height: 10vh;
+        background: red;
+        position: sticky;
+        margin-top: 1rem;
+        bottom: 0;
+    }
+
+}
