@@ -186,7 +186,16 @@ i {
         padding: 10px;
     }
 
-    section p {
+    #skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        gap: 10px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #skills section p {
         text-align: justify;
         font-family: Anta;
         font-size: 15px;
@@ -267,7 +276,7 @@ i {
         align-items: center;
         width: 70px;
         height: 70px;
-        background-color: #1E90FF;
+        /* background-color: #1E90FF; */
         border-radius: 15px;
         cursor: pointer;
     }
