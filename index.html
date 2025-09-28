@@ -150,10 +150,10 @@
         </div>
     </section>
 
-
-
     <h2 class="section-title">Contact Me</h2>
 
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdI_9crAAAAAHQMPwCmzCpHBPDMtg5rcHkTUo7t"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <section id="contact">
         <div class="contact-container">
             <form id="contact-form" class="contact-form">
@@ -173,11 +173,13 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="neon-button">Send Message</button>
-            </form>
+                <div class="g-recaptcha" data-sitekey="6LdI_9crAAAAAHQMPwCmzCpHBPDMtg5rcHkTUo7t">
+                    <button type="submit" class="neon-button">Send Message</button>
+                </div>
+        </div>
+        </form>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="scripts/mail.js"></script>
     <script src="scripts/carousel.js"></script>
     <script src="scripts/script.js"></script>
