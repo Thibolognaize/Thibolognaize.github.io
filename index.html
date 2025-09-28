@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -84,25 +86,109 @@
     </section>
     <h2 class="section-title">Projects</h2>
     <section id="projects">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio quaerat expedita ex rem error
-            ratione eaque dolorum, quisquam qui ipsam dignissimos vero. Praesentium, modi labore. Quo, corrupti. Nulla,
-            voluptatum!
-            Dicta sed odio laudantium! Asperiores ex perferendis dicta, sit, nemo officia, unde repudiandae laudantium
-            quis quam quos quia optio? Qui nesciunt nam accusantium harum velit ab amet sunt sed perferendis?</p>
+        <div class="caroussel">
+            <div id="swiper_l" class="swiper"><i class="fa fa-angle-left"></i></div>
+            <div class="caroussel-container">
+                <div class="project active">
+                    <h4 class="project-title">"Espace-Collaborateur" ECS</h4>
+                    <div class="project-img-container">
+                        <img src="assets/images/projets/projet-collab.png" alt="Projet 1">
+                    </div>
+                    <div class="project-desc">
+                        <p>This project serves as a hub for all Augefi collaborators, enhancing the user experience on
+                            our intra web. Developed with HTML, PHP, and JavaScript, it is secured with Microsoft's
+                            two-factor authentication to maintain confidentiality.</p>
+
+                        <p><strong>For evident reasons</strong> the code is
+                            unavailable to public but you can still click <strong>on the picture</strong></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h4 class="project-title">Weather app</h4>
+                    <div class="project-img-container">
+                        <img src="assets/images/projets/projet-weather.png" alt="Projet 2">
+                    </div>
+                    <div class="project-desc">
+                        <p>This CSS-designed web application displays Weather Map API data. Selected for my first BTS
+                            mock exam E6, I implemented a Google Maps API-based map. Currently offline due to excessive
+                            token consumption.</p>
+                        <button onclick="window.location.href='https://github.com/Thibolognaize/Weather-app'"
+                            class="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                                    fill="white"></path>
+                            </svg>
+                            <p class="text">Check project</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="project">
+                    <h4 class="project-title">Portfolio</h4>
+                    <div class="project-img-container">
+                        <img src="assets/images/projets/projet-portfolio.png" alt="Projet 3">
+                    </div>
+                    <div class="project-desc">
+                        <p>First version of my portfolio, developed two years ago during my BTS. Initially built with
+                            Tailwind CSS CDN as a single-page site, now hosted on Hostinger with direct SSH access to my
+                            GitHub repository for improved accessibility.</p>
+                        <button onclick="window.location.href='https://github.com/Thibolognaize/portfolio_html'"
+                            class="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                                    fill="white"></path>
+                            </svg>
+                            <p class="text">Check project</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="swiper_r" class="swiper"><i class="fa fa-angle-right"></i></div>
+        </div>
     </section>
+
+
+
     <h2 class="section-title">Contact Me</h2>
+
     <section id="contact">
-        <div class="container">
-            <form action="#" method="post">
-                <label for=""></label>
-                <input type="text" name="" id="">
-                <label for=""></label>
-                <input type="text" name="" id="">
-                <label for=""></label>
-                <input type="text" name="" id="">
+        <div class="contact-container">
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="neon-button">Send Message</button>
             </form>
         </div>
     </section>
+
+    <script>document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="scripts/carousel.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
