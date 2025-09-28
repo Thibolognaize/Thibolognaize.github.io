@@ -11,7 +11,7 @@
         top: 0;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.9);
         z-index: 1000;
@@ -20,9 +20,7 @@
 
     .logo-container {
         width: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
     }
 
     .logo-container img {
@@ -33,7 +31,7 @@
     nav ul {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 50px;
         padding: 0;
         margin: 0;
     }
@@ -41,7 +39,7 @@
     nav ul li {
         list-style-type: none;
         font-family: Anta;
-        font-size: 18px;
+        font-size: 24px;
         text-shadow: 0 0 15px rgb(255, 0, 153);
         position: relative;
     }
@@ -73,20 +71,7 @@
         text-shadow: 0 0 15px rgb(0, 255, 133);
     }
 
-    /* Intro Section Styles */
-    .intro {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 5%;
-    }
 
-    .container-intro1 {
-        margin-bottom: 20px;
-    }
 
     .headings1 {
         color: white;
@@ -115,14 +100,8 @@
         line-height: 1.5;
     }
 
-    .container-intro2 {
-        margin-top: 40px;
-    }
 
-    .container-intro2 i {
-        font-size: 60px;
-        animation: bounce 2s infinite;
-    }
+
 
     @keyframes bounce {
 
