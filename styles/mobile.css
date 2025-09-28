@@ -242,11 +242,7 @@
         margin-top: 10px;
     }
 
-    .grid-3 {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+
 
     .logo-holder {
         margin: auto;

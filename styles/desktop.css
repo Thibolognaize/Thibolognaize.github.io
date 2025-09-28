@@ -19,7 +19,7 @@
     }
 
     .logo-container {
-        width: auto;
+        width: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -136,11 +136,11 @@
     section {
         width: 60%;
         margin: 0 auto;
-        padding: 50px;
+        padding: 10px;
         border-radius: 15px;
         border: 2px rgba(255, 0, 153, 0.663) dashed;
         background-color: rgba(128, 128, 128, 0.24);
-        min-height: 100vh;
+        min-height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -152,12 +152,19 @@
         font-size: 3rem;
         text-shadow: 0 0 15px rgb(30, 144, 255);
         text-decoration: underline;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         text-align: center;
+        margin-top: 150px;
+    }
+
+    #contact {
+        padding: 20px;
+        margin-bottom: 50px;
     }
 
     /* About Section Styles */
     #about {
+        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -233,9 +240,9 @@
     /* Skills Section Styles */
     #skills {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        max-width: 1200px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        min-width: 50%;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
@@ -250,6 +257,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        margin: auto;
+        background-color: #f0f0f0;
     }
 
     .logo-holder:hover {
@@ -258,10 +268,14 @@
     }
 
     .logo-holder img {
-        width: 60%;
-        height: 60%;
+        max-width: 100%;
+        /* Limite la largeur de l'image à la largeur du conteneur */
+        max-height: 100%;
+        /* Limite la hauteur de l'image à la hauteur du conteneur */
         object-fit: contain;
+        /* Maintient le ratio d'aspect de l'image */
     }
+
 
     /* Projects Section Styles */
     #projects {
@@ -335,11 +349,6 @@
     }
 
     /* Contact Section Styles */
-    #contact {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .contact-container {
         width: 100%;
