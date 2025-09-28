@@ -156,10 +156,14 @@
 
     <section id="contact">
         <div class="contact-container">
-            <form action="#" method="post" class="contact-form">
+            <form id="contact-form" class="contact-form">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Full name</label>
                     <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company name</label>
+                    <input type="company" id="company" name="company">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
@@ -173,21 +177,8 @@
             </form>
         </div>
     </section>
-
-    <script>document.querySelectorAll('nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
-                    window.scrollTo({
-                        top: targetSection.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="scripts/mail.js"></script>
     <script src="scripts/carousel.js"></script>
     <script src="scripts/script.js"></script>
 </body>
