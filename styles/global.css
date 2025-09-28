@@ -36,6 +36,16 @@ body {
 header {
     width: 100%;
     display: flex;
+    margin-bottom: 90px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(60, 59, 59, 0.809);
+    text-align: center;
+    color: aliceblue;
+    box-shadow: 0 0 10px rgba(255, 0, 153, 0.551);
+
 }
 
 a {

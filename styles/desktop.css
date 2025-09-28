@@ -104,6 +104,17 @@
         line-height: 1.2;
     }
 
+
+    .headings3 {
+        text-align: center;
+        text-decoration: underline;
+        color: white;
+        font-family: Tourney-bold;
+        font-size: 30px;
+        text-shadow: 0 0 15px rgb(30, 144, 255);
+        line-height: 1.5;
+    }
+
     .container-intro2 {
         margin-top: 40px;
     }
@@ -217,8 +228,8 @@
 
     .info h2 {
         margin: 0;
-        text-align: center;
-        font-size: 36px;
+        font-size: 50px;
+        text-shadow: 0 0 15px rgb(255, 0, 153);
         font-family: Alloy;
         margin-bottom: 20px;
     }
@@ -233,8 +244,8 @@
     #about p {
         text-align: center;
         max-width: 800px;
-        margin: 0 auto 50px;
-        font-size: 18px;
+        margin: 10px;
+        font-size: 24px;
     }
 
     /* Skills Section Styles */
